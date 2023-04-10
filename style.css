@@ -47,10 +47,16 @@ a {
 
 .nav-toggle {
     display: none;
+    transition: all 0.3s linear;
 }
 
 .nav-header {
     padding: 10px 30px;
+}
+
+.show-links {
+    height: auto;
+    transition-duration: 5s;
 }
 
 
@@ -66,16 +72,18 @@ a {
     }
 
     .links {
+        height: 0;
         margin: 0;
         padding: 0;
         display: block;
         overflow: hidden;
-        transition: all 0.3s linear;
+        transition: all 3s linear;
         background-color: #a0d2eb;
         
     }
 
     .nav-toggle {
+        transition: all 0.3s linear;
         display: flex;
         background-color: transparent;
         border-color: transparent;
@@ -91,6 +99,7 @@ a {
 
     .show-links{
         height: auto;
+        transition: all 0.3s linear;
     }
 
     .links li {
@@ -111,7 +120,6 @@ a {
         cursor: pointer;
         background-color: #e5eaf5;
         color: #a0d2eb;
-        
     }
 
     .links a:hover {
